@@ -1,0 +1,29 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  background: #387adf;
+}
+
+.header-text {
+  border: 0;
+  padding: 0;
+  outline: 0;
+  font-size: large;
+  font-weight: 400;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.header-account-notification {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
