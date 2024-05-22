@@ -1,15 +1,19 @@
 import "./DashboardContainer.css";
 import Sidebar from "../Sidebar/Sidebar";
-import WalletApp from "walletRemoteApp/WalletApp";
-import PaymentApp from "paymentRemoteApp/PaymentApp";
+import { Outlet, useParams } from "react-router-dom";
 
 const DashboardContainer = () => {
+  const { navigationPath } = useParams();
+
   return (
     <div className="dashboard-container">
       <Sidebar />
       <div className="dashboard-content">
-        <WalletApp />
-        <PaymentApp />
+        {navigationPath ? (
+          <Outlet />
+        ) : (
+          <p>This is a Micro Frontend dashboard setup</p>
+        )}
       </div>
     </div>
   );
