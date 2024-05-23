@@ -22,14 +22,6 @@ const Buttons = [
     label: "Report",
     navPath: "report",
   },
-  {
-    label: "Netbanking",
-    navPath: "netbanking",
-  },
-  {
-    label: "Refund",
-    navPath: "refund",
-  },
 ];
 
 const Sidebar = () => {

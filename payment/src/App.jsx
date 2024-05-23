@@ -1,12 +1,7 @@
 import PaymentApp from "./components/PaymentApp.jsx";
 
 const App = () => {
-  return (
-    <>
-      <h1>Payments App</h1>
-      <PaymentApp />
-    </>
-  );
+  return <PaymentApp />;
 };
 
 export default App;
