@@ -1,0 +1,42 @@
+.wallet-container {
+  padding: 32px;
+
+  .products-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+
+    .product-card {
+      border: 1px solid black;
+      border-radius: 4px;
+      width: calc(33% - 45px);
+      padding: 16px;
+
+      .product-image {
+        width: auto;
+        height: 200px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .products-container {
+      .product-card {
+        width: calc(50% - 42px);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .products-container {
+      .product-card {
+        width: 100%;
+      }
+    }
+  }
+}

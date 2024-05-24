@@ -12,7 +12,9 @@ const DashboardContainer = () => {
         {navigationPath ? (
           <Outlet />
         ) : (
-          <p>This is a Micro Frontend dashboard setup</p>
+          <div className="p-32">
+            <h1>Host Repository: Micro Frontend Dashboard Setup</h1>
+          </div>
         )}
       </div>
     </div>

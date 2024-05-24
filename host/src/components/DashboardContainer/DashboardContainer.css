@@ -20,6 +20,10 @@
       width: 100%;
     }
   }
+
+  .p-32 {
+    padding: 32px;
+  }
 }
 
 .dashboard-content {
